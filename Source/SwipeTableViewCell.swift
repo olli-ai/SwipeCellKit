@@ -17,6 +17,7 @@ open class SwipeTableViewCell: UITableViewCell {
     
     /// The object that acts as the delegate of the `SwipeTableViewCell`.
     public weak var delegate: SwipeTableViewCellDelegate?
+    public var bottomPadding: CGFloat = 0
     
     var state = SwipeState.center
     var actionsView: SwipeActionsView?

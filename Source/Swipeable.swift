@@ -14,6 +14,8 @@ protocol Swipeable {
     
     var actionsView: SwipeActionsView? { get set }
     
+    var bottomPadding: CGFloat { get set }
+    
     var frame: CGRect { get }
     
     var scrollView: UIScrollView? { get }

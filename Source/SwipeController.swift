@@ -222,7 +222,7 @@ class SwipeController: NSObject {
         
         actionsContainerView.addSubview(actionsView)
         
-        actionsView.heightAnchor.constraint(equalTo: swipeable.heightAnchor).isActive = true
+        actionsView.heightAnchor.constraint(equalToConstant: actionsContainerView.bounds.height - swipeable.bottomPadding).isActive = true
         actionsView.widthAnchor.constraint(equalTo: swipeable.widthAnchor, multiplier: 2).isActive = true
         actionsView.topAnchor.constraint(equalTo: swipeable.topAnchor).isActive = true
         
